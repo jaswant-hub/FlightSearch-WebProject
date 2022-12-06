@@ -1,0 +1,330 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.container-fluid{
+  padding: 5% 15%;
+}
+.flight-container-fluid{
+  padding: 5% 15%;
+}
+
+p{
+  color: #8f8f8f;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Montserrat'
+}
+.big-heading{
+  font-size: 3.4rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+.price-heading{
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.navbar-brand{
+  font-family: "Montserrat-Black";
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 380px;
+}
+
+.navbar{
+  padding: 0 0 4.5rem ;
+}
+.nav-item{
+  margin-right: 30px;
+}
+.nav-link{
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+.download-button{
+  margin: 5% 3% 5% 0;
+}
+
+#title{
+  height: 38rem;
+  color: #fff;
+  text-align: left;
+  padding-top: 3%;
+  background-size: cover;
+  justify-content: center;
+  background-position: center;
+}
+#search-title{
+  height: 38rem;
+  color: #fff;
+  text-align: left;
+  background-size: cover;
+  justify-content: center;
+  background-position: center;
+}
+#deal-title{
+  height: 40rem;
+  color: #fff;
+  text-align: left;
+  background-size: cover;
+  justify-content: center;
+  background-position: center;
+}
+#deal2-title{
+  height: 48rem;
+  color: #fff;
+  text-align: left;
+  background-size: cover;
+  justify-content: center;
+  background-position: center;
+}
+#title .container-fluid{
+  padding: 1% 15% 7%;
+}
+
+#features .container-fluid {
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+#features{
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.feature-title{
+  font-weight: bold;
+  font-size: 150%;
+}
+.feature-box{
+  padding: 7%;
+}
+.icon{
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+.icon:hover{
+  color: #ff4c68;
+}
+
+.search-field {
+  height: 50px;
+  width: 200px;
+  padding: 10px;
+  outline: none;
+}
+
+.form-box {
+  background: rgba(0,0,0,0.5);
+  padding: 10px;
+}
+.search-form {
+  padding-top: 30px;
+}
+.next-row {
+  padding-top: 10px;
+}
+.search-heading {
+  padding-bottom: 20px;
+  font-weight: 550;
+}
+.card-title {
+  color: black;
+}
+.car-title {
+    font-size: 15px;
+    color: black;
+}
+.img-fluid {
+  height: 220px;
+  width: 350px;
+}
+#card2-img {
+  height: 375px;
+  width: 350px;
+}
+.col-4{
+margin-left: 88px;
+}
+.top-row {
+  padding-bottom: 10px;
+}
+.flight-heading {
+  padding-bottom: 10px;
+}
+.bottom-row {
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.btn-book {
+  position: relative;
+  left: 646px;
+  padding: 8px 40px;
+}
+.btn-sux {
+  position: relative;
+  left: 320px;
+  padding: 8px 40px;
+  width: 190px
+}
+.btn-home {
+  position: relative;
+  left: 230px;
+  padding: 8px 40px;
+  width: 190px
+}
+.btn-search {
+  position: relative;
+  left: 20px;
+  padding: 8px 40px;
+  width: 190px
+}
+@media (max-width: 1050px){
+  .col-4 {
+    margin-left: 50px;
+  }
+  .navbar-brand {
+    margin-right: 100px;
+  }
+  .btn-book {
+    position: static;
+  }
+  .form-box {
+    width: 357px;
+    padding-left: 50px;
+  }
+  .search-field{
+    width: 250px;
+  }
+  .search-form {
+    padding-top: 1px;
+  }
+  .search-heading {
+    padding-bottom: 1px;
+  }
+  .navbar {
+    padding: 0 0 2.3rem;
+  }
+  .head-nav {
+    padding: 0 0 6.8rem;
+  }
+  #search-title {
+    height: 46rem;
+  }
+  .price-text {
+    font-size: 16px;
+  }
+  #deal-title {
+    height: 55rem;
+  }
+  #card2-img {
+  height: 220px;
+  }
+  #deal2-title {
+    height: 70rem;
+  }
+  .btn-sux {
+    position: static;
+  }
+  .btn-home {
+    position: static;
+    width: 150px;
+  }
+  .btn-search {
+    position: static;
+    width: 150px;
+    left: 0px;
+  }
+}
+
+.feature-title2{
+  font-weight: bold;
+  font-size: 150%;
+  width: 107%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.wrapper{
+  position: relative;
+  left: 50%;
+  top: 190px;
+  transform: translate(-50% , -50%);
+  background: #fff;
+  width: 370px;
+  height: 450px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+.wrapper .top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1414b8;
+  height: 110px;
+  position: relative;
+  border-radius: 12px 12px 0 0;
+}
+.wrapper .top::before{
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: #1414b8;
+  bottom: -10px;
+  transform: rotate(45deg);
+}
+.wrapper .top i{
+  font-size: 70px;
+  color: #ccc;
+}
+.wrapper .bottom{
+  padding: 30px;
+  word-spacing: -1px;
+}
+.wrapper .bottom .info{
+  font-size: 20px;
+  font-weight: 500;
+}
+.wrapper .bottom .input-box{
+  height: 45px;
+  margin: 15px 0 10px 0;
+}
+.wrapper form .input-box input{
+  height: 100%;
+  width: 100%;
+  padding-left: 14px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 25px;
+  transition: all 0.4s ease;
+
+}
+.wrapper .bottom input[type="text"]{
+  border: 2px solid #ccc;
+}
+.wrapper .bottom input[type="text"]:focus,
+.wrapper .bottom input[type="text"]:valid{
+  border-color: #6665ee;
+}
+.wrapper .bottom input[type="submit"]{
+  border: none;
+  cursor: pointer;
+  background: #6665ee;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.wrapper .bottom input[type="submit"]:hover{
+  background: #1414b8;
+}
+
+footer {
+  height: 50px;
+  padding-top: 19px;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Flight_FullStack.iml" filepath="$PROJECT_DIR$/.idea/Flight_FullStack.iml" />
+      <module fileurl="file://D:/TinDog-Start-master/.idea/TinDog-Start-master.iml" filepath="D:/TinDog-Start-master/.idea/TinDog-Start-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../testsqllite/.idea/testsqllite.iml" filepath="$PROJECT_DIR$/../testsqllite/.idea/testsqllite.iml" />
+    </modules>
+  </component>
+</project>

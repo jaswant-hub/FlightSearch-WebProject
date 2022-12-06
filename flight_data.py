@@ -6,7 +6,7 @@ import os
 load_dotenv()
 
 flight_data_endpoint = "https://api.tequila.kiwi.com/v2/search"
-TEQUILA_API = os.getenv("TEQUILA_API")
+TEQUILA_API = "Yo6xXSSwdsdgoxra8RtaDzaGCTHohNbt"
 
 
 class FlightData:

@@ -6,6 +6,7 @@ from flight_data import FlightData
 from flask_sqlalchemy import SQLAlchemy
 import os
 
+
 load_dotenv()
 
 app = Flask(__name__)

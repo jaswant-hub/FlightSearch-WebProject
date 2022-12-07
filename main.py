@@ -1,15 +1,15 @@
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap
 from flight_search import FlightSearch
 from flight_data import FlightData
 from flask_sqlalchemy import SQLAlchemy
-# import os
+import os
 
-# load_dotenv()
+load_dotenv()
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "8BYkEfBA6O6donzWlSihBXox7C0sKR6b"
+app.config['SECRET_KEY'] = os.getenv("APP_SECRET_KEY")
 Bootstrap(app)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///flight-db.db"

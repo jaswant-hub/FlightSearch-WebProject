@@ -1,12 +1,12 @@
 import requests
 from datetime import datetime, timedelta
-# from dotenv import load_dotenv
-# import os
+from dotenv import load_dotenv
+import os
 
-# load_dotenv()
+load_dotenv()
 
 flight_data_endpoint = "https://api.tequila.kiwi.com/v2/search"
-TEQUILA_API = "Yo6xXSSwdsdgoxra8RtaDzaGCTHohNbt"
+TEQUILA_API = os.getenv("TEQUILA_API")
 
 
 class FlightData:

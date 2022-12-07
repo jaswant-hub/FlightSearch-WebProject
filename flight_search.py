@@ -1,11 +1,11 @@
 import requests
-# from dotenv import load_dotenv
-# import os
+from dotenv import load_dotenv
+import os
 
-# load_dotenv()
+load_dotenv()
 
 TEQUILA_ENDPOINT = "https://tequila-api.kiwi.com"
-TEQUILA_API = "Yo6xXSSwdsdgoxra8RtaDzaGCTHohNbt"
+TEQUILA_API = os.getenv("TEQUILA_API")
 SEARCH_LOCATION_EP = f"{TEQUILA_ENDPOINT}/locations/query"
 
 

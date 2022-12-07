@@ -1,20 +1,20 @@
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap
 from flight_search import FlightSearch
 from flight_data import FlightData
 from flask_sqlalchemy import SQLAlchemy
-import os
+# import os
 
-load_dotenv()
+# load_dotenv()
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.getenv("APP_SECRET_KEY")
+app.config['SECRET_KEY'] = "8BYkEfBA6O6donzWlSihBXox7C0sKR6b"
 Bootstrap(app)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///flight-db.db"
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db = SQLAlchemy(app)
+# app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///flight-db.db"
+# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+# db = SQLAlchemy(app)
 
 
 @app.route("/")
@@ -29,25 +29,25 @@ def subscribe():
 
 @app.route("/thankYou", methods=['POST'])
 def success():
-    class User(db.Model):
-        id = db.Column(db.Integer, primary_key=True)
-        name = db.Column(db.String(250), nullable=False)
-        origin = db.Column(db.String(250), nullable=False)
-        email = db.Column(db.String(250), nullable=False)
-
-    name = request.form["username"]
-    name1 = name.split(" ")
-    if name1[0] == " ":
-        name2 = name1[1].title()
-    else:
-        name2 = name1[0].title()
-    origin_city = request.form["cityName"]
-    email = request.form["email"]
-
-    with app.app_context():
-        new_user = User(name=f'{name2}', origin=f'{origin_city}', email=f'{email}')
-        db.session.add(new_user)
-        db.session.commit()
+    # class User(db.Model):
+    #     id = db.Column(db.Integer, primary_key=True)
+    #     name = db.Column(db.String(250), nullable=False)
+    #     origin = db.Column(db.String(250), nullable=False)
+    #     email = db.Column(db.String(250), nullable=False)
+    #
+    # name = request.form["username"]
+    # name1 = name.split(" ")
+    # if name1[0] == " ":
+    #     name2 = name1[1].title()
+    # else:
+    #     name2 = name1[0].title()
+    # origin_city = request.form["cityName"]
+    # email = request.form["email"]
+    #
+    # with app.app_context():
+    #     new_user = User(name=f'{name2}', origin=f'{origin_city}', email=f'{email}')
+    #     db.session.add(new_user)
+    #     db.session.commit()
 
     return render_template("success.html")
 

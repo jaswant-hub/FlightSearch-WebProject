@@ -183,7 +183,7 @@ margin-left: 88px;
   padding: 8px 40px;
   width: 190px
 }
-@media (max-width: 1050px){
+@media (max-width: 1200px){
   .col-4 {
     margin-left: 50px;
   }
@@ -194,8 +194,8 @@ margin-left: 88px;
     position: static;
   }
   .form-box {
-    width: 357px;
-    padding-left: 50px;
+    width: 1200px;
+    padding-left: 30px;
   }
   .search-field{
     width: 250px;

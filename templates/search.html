@@ -59,30 +59,30 @@
           <h1 class="search-heading">Search It On!</h1>
           <div class="form-box">
               <div class="row">
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-3">
                        <input name="origin" type="text" class="search-field" placeholder="FROM" required>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-3">
                        <input name="destination" type="text" class="search-field" placeholder="TO" required>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-3">
                       <input name="departure" placeholder="DEPARTURE" class="search-field" type="text" onfocus="(this.type='date')" required>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6" id="returnX">
+                  <div class="col-3" id="returnX">
                       <input name="return" placeholder="RETURN" class="search-field" type="text" onfocus="(this.type='date')" >
                   </div>
               </div>
               <div class="row next-row">
-                  <div class="col-lg-3 col-md-6">
+                  <div class="col-3">
                       <select name="flight-type" onchange="changeStatus()" class="search-field" id="type-flight">
                           <option value="oneway">One way</option>
                           <option value="round" selected>Round</option>
                       </select>
                   </div>
-                  <div class="col-lg-3 col-md-6">
+                  <div class="col-3">
                       <input name="passengers" placeholder="PASSENGERS" class="search-field" type="number" min="1" max="9" required>
                   </div>
-                  <div class="col-lg-3 col-md-6">
+                  <div class="col-3">
                       <button type="submit" class="btn btn-success search-field">SEARCH</button>
                   </div>
               </div>

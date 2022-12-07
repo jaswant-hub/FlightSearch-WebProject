@@ -6,13 +6,14 @@ from flight_data import FlightData
 from flask_sqlalchemy import SQLAlchemy
 import os
 
+"sqlite:///flight-db.db"
 load_dotenv()
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv("APP_SECRET_KEY")
 Bootstrap(app)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///flight-db.db"
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL", "sqlite:///flight-db.db")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
@@ -45,6 +46,8 @@ def success():
     email = request.form["email"]
 
     with app.app_context():
+        db.create_all()
+
         new_user = User(name=f'{name2}', origin=f'{origin_city}', email=f'{email}')
         db.session.add(new_user)
         db.session.commit()

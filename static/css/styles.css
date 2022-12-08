@@ -223,7 +223,10 @@ margin-left: 88px;
     height: 55rem;
   }
   #card2-img {
-  height: 220px;
+    height: 465px;
+  }
+  #card-img-ow {
+    height: 255px;
   }
   #deal2-title {
     height: 70rem;
@@ -232,8 +235,8 @@ margin-left: 88px;
     position: static;
   }
   .btn-home {
-    position: static;
     width: 150px;
+    left: 120px;
   }
   .btn-search {
     position: static;
